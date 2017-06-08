@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+body{ 
+    background-color: #444;
+    margin:0px 70px;
+    padding: 0px 20px;
+}
+h2{
+    position: relative;
+    margin: 0px;
+    padding-bottom: 20px;
+    font-family: "黑体";
+    font-size: 24px;
+    color: #333;
+}
+h3{
+    padding-bottom: 15px;
+    color: #666;
+    font-size: 17px;
+}
+
+#top{
+    width: 100%;
+    height: 60px;
+    background: rgb(51,51,51);
+    position: relative;
+    overflow: hidden;
+}
+#top h1{
+    color: lightblue;
+    width: 350px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top:0;
+    line-height: 60px;
+}
+#top ul{
+    width: 400px;
+    height: 60px;
+    font-size:12px;
+    position: absolute;
+    right:0;
+    top:0;
+    line-height: 60px;
+}
+#top li{
+    float: left;
+    margin-left: 30px;
+}
+#top ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#part1{
+    background: #eee;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 10px, 10px,5px,#888888;
+}
+
+#part1 span{
+    display: inline-block;
+    margin:0px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    color: #555;
+}
+#part1 div{
+    text-indent: 32px;
+    line-height: 26px;
+    font-family: '黑体';
+    font-size: 15px;
+}
+#part1 a:link, a:visited {
+    color: blue;
+}
+#part1 img{
+    position: relative;
+    left: -30px;
+}
+#part2{
+    background: #eee;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 10px, 10px,5px,#888888;
+}
+#part2 span{
+    display: inline-block;
+    margin:0px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    color: #555;
+}
+#part2 div{
+    text-indent: 32px;
+    line-height: 26px;
+    font-family: '黑体';
+    font-size: 15px;
+}
+#part2 a:link, a:visited {
+    color: blue;
+}
+#part2 img{
+    position: relative;
+    left: -30px;
+}
+#part2 ul{
+    list-style-type: none;
+}
+#part3{
+    background: #eee;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 10px, 10px,5px,#888888;
+}
+#part3 .phoDiv{
+    border: 1px solid #ccc;
+    height: 340px;
+    width: 400px;
+    margin:20px;
+    padding:20px;
+}
+#part3 .phoDiv p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#part4{
+    background: #eee;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 10px, 10px,5px,#888888;
+}
+#part4 span{
+    display: inline-block;
+    margin:0px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    color: #555;
+}
+#part4 ol{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+#part4 ol li{
+    padding: 3px;
+    font-family: "黑体";
+}
+#part4 p{
+    text-align: center;
+}
+#part4 table{
+    width: 100%;
+    border-collapse: collapse;
+}
+#part4 table th{
+    text-align: left;
+    color: #fff;
+    background-color: #000;
+}
+#part4 table td{
+    border: 1px solid #bbb;
+}
+a:link,a:visited{
+    color: purple;
+}
+#part4 #sum{
+    background-color: gray;
+    font-weight: bold;
+}
+#part5{
+    background: #eee;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 10px, 10px,5px,#fff;
+}
+#part5 form{
+    font-size: 15px;
+    line-height: 30px;
+}
+#part5 .left{
+    position: absolute;
+    right: 65%;
+}
+#part5 .right{
+    position: relative;
+    left: 35%;
+}
+#part5 p{
+    color: #aaa;
+    font-size: 13px;
+}
+
+#part5 #btn{
+    width: 100%;
+    height: 40px;
+    background-color: #33f;
+    color:white;
+    border-radius: 8px;
+}
+#footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+}
