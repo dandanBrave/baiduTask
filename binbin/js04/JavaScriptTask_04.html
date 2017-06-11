@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IFE JavaScript Task 04</title>
+        <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .page{
+            min-height: 100px;
+            max-width: 360px;
+            float: left;
+            margin-left: 200px;
+            border-radius: 5px;
+            background: linear-gradient(#00FFE8,#0588FF);
+            background: -webkit-linear-gradient(#00FFE8,#0588FF);
+            background: -o-linear-gradient(#00FFE8,#0588FF);
+            background: -moz-linear-gradient(#00FFE8,#0588FF);
+            padding: 5px;
+        }
+        .function{
+            height: 25px;
+            width: 360px;
+            float: left;
+        }
+        .function input{
+            width: 90px;
+            height: 24px;
+            margin-right: 10px;
+            float: left;
+            border:none;
+            outline: none;
+            background-color: #35afff;
+        }
+        .function button{
+            width: 50px;
+            height: 24px;
+            float: left;
+            margin-left: 10px;
+            background-color: #35afff;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+        }
+        .display{
+            height: 50px;
+        }
+        .f1{
+            height: 30px;
+            width: 40px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #00DEFF;
+            border-radius: 4px;
+            float: left;
+            margin-right: 6px;
+            margin-top: 5px;
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div class="function">
+                <input type="text" id="insert"></input> 
+                <button id="leftIn" class="leftIn" onclick="leftAdd()">左侧入</button>
+                <button id="rightIn" class="rightIn" onclick="rightAdd()">右侧入</button>
+                <button id="leftOut" class="leftOut" onclick="leftOut()">左侧出</button>
+                <button id="rightOut" class="rightOut" onclick="rightOut()">右侧出</button>
+            </div>
+            <div class="display" id="display"></div>
+        </div>
+
+        <script type="text/javascript">
+        function leftAdd(){
+            var digitList = document.getElementById("display");
+            var fChild = digitList.firstChild;
+            var newDiv = document.createElement("div");
+            newDiv.setAttribute("class","f1");
+            newDiv.setAttribute("onclick","clickdel(this)");
+            digitList.insertBefore(newDiv,fChild);
+            fChild = digitList.firstChild;
+            x = Math.ceil(Math.random()*100);
+            fChild.innerHTML = x;
+        }
+         function rightAdd(){
+            var digitList = document.getElementById("display");
+            var newDiv = document.createElement("div");
+            newDiv.setAttribute("class","f1");
+            newDiv.setAttribute("onclick","clickdel(this)");
+            digitList.appendChild(newDiv);
+            var rchild=digitList.lastChild;
+            x = Math.ceil(Math.random()*100);
+            rchild.innerHTML = x;
+        }
+         function leftOut(){
+            var digitList = document.getElementById("display");
+            var fChild = digitList.firstChild;
+            var reChild = fChild.innerHTML;
+            digitList.removeChild(fChild);
+            alert("移除"+reChild+"?");
+        }
+         function rightOut(){
+            var digitList = document.getElementById("display");
+            var lChild = digitList.lastChild;
+            var reChild = lChild.innerHTML;
+            digitList.removeChild(lChild);
+            alert("移除"+reChild+"?");
+        }
+        function clickdel(divNode){
+            var pNode = divNode.parentNode;
+            pNode.removeChild(divNode);
+        }
+        </script>
+    </body>    
+</html>
